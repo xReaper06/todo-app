@@ -35,8 +35,8 @@ const handleBtnClick = (id, option) => {
                 <span>{{ props.list_date }}</span>
             </span>
             <div class="buttons">
-                <button @click="handleBtnClick(props.list_id, '')">{{ props.list_status === 0 ? 'Done' : 'Undone' }}</button>
-                <button @click="handleBtnClick(props.list_id, 'remove')">Remove</button>
+                <button class="donebtn" @click="handleBtnClick(props.list_id, '')">{{ props.list_status === 0 ? 'Done' : 'Undone' }}</button>
+                <button class="removebtn" @click="handleBtnClick(props.list_id, 'remove')">Remove</button>
             </div>
         </li>
     </ul>
@@ -45,6 +45,12 @@ const handleBtnClick = (id, option) => {
 <style>
 ul {
     width: 100%;
+    border: 5px solid #000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 2%;
+    background-color: azure;
+    color: black;
 }
 ul li {
     list-style: none;
@@ -72,6 +78,32 @@ ul li {
     align-items: center;
     align-content: flex-end;
     gap: 5px;
+}
+.donebtn{
+    padding: 4px 8px;
+    border: 2px solid #0aee3b;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #0aee3b;
+    color: white;
+}
+.donebtn:hover{
+    border: 2px solid #035a16;
+    background-color: #035a16;
+}
+.removebtn{
+    padding: 4px 8px;
+    cursor: pointer;
+    border: 2px solid #f10f0f;
+    background-color: #f10f0f;
+    border-radius: 2px;
+    color: white;
+}
+.removebtn:hover{
+    
+    border: 2px solid #6b0808;
+    background-color: #6b0808;
+
 }
 
 .mark-done {

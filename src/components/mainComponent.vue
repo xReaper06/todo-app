@@ -85,6 +85,8 @@ const clearSearch = ()=>{
 .main-container{
     border: 2px solid #1a73e8;
     border-radius: 5%;
+    background-color: #080606e8;
+    color: aliceblue;
 }
 .main-container:hover{
     border: 5px solid color-mix(in srgb, #080606 100%, #1a73e8 100%);
@@ -123,7 +125,7 @@ const clearSearch = ()=>{
   position: relative;
 }
 
-.input {
+.search-group input {
   width: var(--width-input);
   border: solid 1.5px var(--default-color);
   border-radius: 80px;
@@ -142,6 +144,10 @@ const clearSearch = ()=>{
   pointer-events: none;
   transform: translateY(1rem);
   transition: var(--transition);
+}
+.input{
+    border: 2px solid #1a73e8;
+    background-color: aliceblue;
 }
 
 .enter-label {
@@ -274,7 +280,27 @@ const clearSearch = ()=>{
 
 
 .button input[type="button"] {
-    padding: 5px 10px;
+    padding: 7px 15px;
+    margin-left: 2px;
+    background-color: #10aedf;
+    color: white;
+}
+.button input[type="button"]:hover {
+    background-color: #03222c;
+    color: rgb(49, 46, 46);
+}
+.button input[type="text"] {
+    padding: 10px 20px;
+}
+.button input[type="text"]:hover {
+    padding: 10px 20px;
+    border: 1px solid #1a73e8;
+    border-radius: 2%;
+}
+.button input[type="text"]:active {
+    padding: 10px 20px;
+    border: 1px solid #1a73e8;
+    border-radius: 2%;
 }
 
 .bottom-container {
@@ -298,6 +324,5 @@ const clearSearch = ()=>{
     color: aliceblue;
     border-radius: 50%;
     transition-duration: 0.3s;
-    transition-delay: 0.3s;
 }
 </style>
