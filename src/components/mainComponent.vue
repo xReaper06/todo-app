@@ -45,6 +45,7 @@ const clearSearch = ()=>{
 <template>
     <div class="main-container">
         <div class="container">
+            <div class="title">Todo List App</div>
             <div class="top-container">
                 <div class="inputs">
                     <label for="input_list">Add new list</label>
@@ -82,6 +83,12 @@ const clearSearch = ()=>{
 
 
 <style scoped>
+.title{
+    text-align: center;
+    text-decoration:solid;
+    color: white;
+    margin-bottom: 20px;
+}
 .main-container{
     border: 2px solid #1a73e8;
     border-radius: 5%;
@@ -89,7 +96,7 @@ const clearSearch = ()=>{
     color: aliceblue;
 }
 .main-container:hover{
-    border: 5px solid color-mix(in srgb, #080606 100%, #1a73e8 100%);
+    border: 10px solid color-mix(in srgb, #16f786 100%, #12e6f5 100%);
     box-shadow: 10px #080606;
 }
 
@@ -280,14 +287,16 @@ const clearSearch = ()=>{
 
 
 .button input[type="button"] {
-    padding: 7px 15px;
+    padding: 10px 20px;
     margin-left: 2px;
+    border: 1px solid #10aedf;
     background-color: #10aedf;
     color: white;
 }
 .button input[type="button"]:hover {
+    border: 1px solid #03222c;
     background-color: #03222c;
-    color: rgb(49, 46, 46);
+    color: white;
 }
 .button input[type="text"] {
     padding: 10px 20px;
