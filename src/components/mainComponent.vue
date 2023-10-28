@@ -119,10 +119,10 @@ const clearSearch = ()=>{
     gap: 5px;
 }
 .search-panels {
-  --default-color: #9e9e9e;
-  --color-text: #080606;
+  --default-color: #fcfbfb;
+  --color-text: #fcf8f8;
   --color-active: #1a73e8;
-  --color-active-input: #080606;
+  --color-active-input: #f5f2f2;
   --transition: 150ms cubic-bezier(0.4,0,0.2,1);
   --width-input: 200px;
   margin-top: 50px;
